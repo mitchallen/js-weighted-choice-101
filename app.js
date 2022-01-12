@@ -5,14 +5,17 @@ import { weightedChoice } from './weighted-choice.js';
 
 let canvas = document.getElementById("canvas");
 const SCREEN_SIZE = 300;
-const DIM = 20;
+const DIM = 10;
 const CELL_SIZE = SCREEN_SIZE / DIM;
-const BORDER = 0.5;
+const BORDER = 1.0;
 const COLOR_NEON_PINK = "#FF10F0";
+const COLOR_2 = "#F0FF10";
+const COLOR_3 = "#10F0FF";
 const SOURCE = {
-    [COLOR_NEON_PINK]: 0.15,
-    "cyan": 0.15,
-    "blue": 0.70,
+    [COLOR_NEON_PINK]: 0.70,
+    [COLOR_2]: 0.10,
+    [COLOR_3]: 0.10,
+    "white": 0.10,
 }
 // create an array filled with results
 const arr = Array.from({ length: DIM * DIM }, () => weightedChoice( SOURCE ));
