@@ -8,13 +8,13 @@ function testWeightedChoice(source = {}) {
     console.log('\nSOURCE:');
     console.log(source);
 
-    // define the number of dice rolls
+    // define the number of results
     const LIMIT = 100;
 
-    // create an array filled with dice rolls
+    // create an array filled with results
     let arr = Array.from({ length: LIMIT }, () => weightedChoice(source));
 
-    // log the generated dice rolls
+    // log the generated results
     console.log(arr);
 
     // count the occurences of each roll result
