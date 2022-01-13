@@ -13,6 +13,7 @@ export function weightedChoice(source) {
         lower += weight;
     }
 
-    // Never reached 100% and random number is out of bounds
+    // Never reached 100% and random 
+    // number is out of bounds
     return undefined;   
 }

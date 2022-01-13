@@ -17,7 +17,7 @@ function testWeightedChoice(source = {}) {
     // log the generated results
     console.log(arr);
 
-    // count the occurences of each roll result
+    // count the occurences of each result
     let occurrences = arr.reduce((prev, curr) => (prev[curr] = ++prev[curr] || 1, prev), {});
 
     // log a summary of the occurences
