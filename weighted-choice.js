@@ -10,7 +10,7 @@ export function weightedChoice(source) {
         if (rnd >= lower && rnd < upper) {
             return choice; 
         }
-        lower += weight;
+        lower = upper;
     }
 
     // Never reached 100% and random 
